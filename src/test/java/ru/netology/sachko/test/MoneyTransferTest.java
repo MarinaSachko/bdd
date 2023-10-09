@@ -42,6 +42,8 @@ class MoneyTransferTest {
 
     @BeforeEach
     void setup() {
+
+        System.setProperty("chromeoptions.args", "--remote-allow-origins=*");
         var loginPage = open("http://localhost:9999", LoginPage.class);
         var authInfo = getAuthInfo();
         var verificationPage = loginPage.validLogin(authInfo);

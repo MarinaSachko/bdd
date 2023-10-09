@@ -22,6 +22,7 @@ public class DataHelper {
     private DataHelper(){}
 
     public static VerificationCode getVerificationCode(){
+
         return new VerificationCode("12345");
     }
 
@@ -61,6 +62,6 @@ public class DataHelper {
     }
 
 
-        public static VerificationCode getVerificationCodeFor(AuthInfo authInfo) {
-            return new VerificationCode("12345");}
+//        public static VerificationCode getVerificationCodeFor(AuthInfo authInfo) {
+//            return new VerificationCode("12345");}
 }
